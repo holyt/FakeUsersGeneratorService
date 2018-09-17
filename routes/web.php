@@ -1,16 +1,10 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It is a breeze. Simply tell Lumen the URIs it should respond to
-| and give it the Closure to call when that URI is requested.
-|
-*/
+//get one fake user
+$router->get('/users/random_one', 'RandomUserGeneratorController@show');
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+//get available params for user generation
+$router->get('users/available_params', 'UserParamsController@show');
+
+//get fake user by params
+$router->get('/users', 'ParamsUserGeneratorController@show');

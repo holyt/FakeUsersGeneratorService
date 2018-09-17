@@ -1,7 +1,10 @@
 <?php
 
+use Laravel\Lumen\Testing\DatabaseMigrations;
+
 abstract class TestCase extends Laravel\Lumen\Testing\TestCase
 {
+    use DatabaseMigrations;
     /**
      * Creates the application.
      *
