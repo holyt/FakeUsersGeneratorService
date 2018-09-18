@@ -8,6 +8,11 @@ It based on [Faker](https://github.com/fzaninotto/Faker) library and [Lumen](htt
 - php 7.1 or higher
 - composer
 
+###if you need to use Groups, additional you will need:
+- [Any Lumen compatible DB](https://lumen.laravel.com/docs/5.7/database).
+- [Redis](https://redis.io/)
+- [predis](https://github.com/nrk/predis) or [phpredis](https://github.com/phpredis/phpredis)
+- configure .env file in root directory of this service (basically just move.env.example to env, and all will be ok)
 
 ## Usage
 
@@ -42,7 +47,7 @@ $ php -S localhost:8000 -t public
 ```
 GET: /users/random_one
 ```
-
+This request will return user; 
 ```
 {
     "first_name":"Mohammed",
@@ -57,9 +62,26 @@ GET: /users/random_one
 ```
 GET: /users?number_of_users=2
 ```
+This request will return array of user;
 
 ### Get available params for users generation
 
 ```
 GET: users/available_params
 ```
+This request will array of available params for users generation;
+
+### Create users group
+
+```
+POST: groups
+BODY: [number_of_users: required|int]
+```
+This request will return `['group_id' => created group id]` 
+ 
+### Get group users
+
+```
+GET: groups/{group_id}/users
+```
+This request will array of users. 
