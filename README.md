@@ -8,7 +8,7 @@ It based on [Faker](https://github.com/fzaninotto/Faker) library and [Lumen](htt
 - php 7.1 or higher
 - composer
 
-###if you need to use Groups, additional you will need:
+### If you need to use Groups, additional you will need:
 - [Any Lumen compatible DB](https://lumen.laravel.com/docs/5.7/database).
 - [Redis](https://redis.io/)
 - [predis](https://github.com/nrk/predis) or [phpredis](https://github.com/phpredis/phpredis)
