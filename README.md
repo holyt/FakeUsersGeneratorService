@@ -84,4 +84,4 @@ This request will return `['group_id' => created group id]`
 ```
 GET: groups/{group_id}/users
 ```
-This request will c array of users. 
+This request will return array of users. 
