@@ -13,7 +13,7 @@ It based on [Faker](https://github.com/fzaninotto/Faker) library and [Lumen](htt
 - [Redis](https://redis.io/)
 - [predis](https://github.com/nrk/predis) or [phpredis](https://github.com/phpredis/phpredis)
 - configure .env file in root directory of this service (basically just move .env.example to .env, and all will be ok)
-
+- start jobs listener ```$ php artisan queue:work```
 ## Usage
 
 1. Clone it
@@ -69,7 +69,7 @@ This request will return array of user;
 ```
 GET: users/available_params
 ```
-This request will array of available params for users generation;
+This request will return array of available params for users generation;
 
 ### Create users group
 
@@ -84,4 +84,4 @@ This request will return `['group_id' => created group id]`
 ```
 GET: groups/{group_id}/users
 ```
-This request will array of users. 
+This request will c array of users. 
