@@ -77,7 +77,7 @@ This request will return array of available params for users generation;
 POST: groups
 BODY: [number_of_users: required|int]
 ```
-This request will return `['group_id' => created group id]` 
+This request will return `{'group_id' => created group id}` 
  
 ### Get group users
 
