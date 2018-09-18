@@ -55,7 +55,7 @@ GET: /users/random_one
 ### Get fake users by params
 
 ```
-GET: /users/random_one?number_of_users=2
+GET: /users?number_of_users=2
 ```
 
 ### Get available params for users generation
