@@ -5,11 +5,6 @@ use App\UserGenerator\UserGenerator;
 
 class UsersGenerationTest extends TestCase
 {
-    protected function getResponseBody($response): array
-    {
-        return json_decode($response->response->getContent(), true);
-    }
-
     /** @test */
     public function will_generate_user()
     {
