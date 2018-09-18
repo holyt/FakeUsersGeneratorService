@@ -12,7 +12,7 @@ It based on [Faker](https://github.com/fzaninotto/Faker) library and [Lumen](htt
 - [Any Lumen compatible DB](https://lumen.laravel.com/docs/5.7/database).
 - [Redis](https://redis.io/)
 - [predis](https://github.com/nrk/predis) or [phpredis](https://github.com/phpredis/phpredis)
-- configure .env file in root directory of this service (basically just move.env.example to .env, and all will be ok)
+- configure .env file in root directory of this service (basically just move .env.example to .env, and all will be ok)
 
 ## Usage
 
